@@ -29,6 +29,7 @@
                 <a href="#reszei" class="nav-item nav-link">Részei</a>
                 <a href="#csoportositas" class="nav-item nav-link">Csoportosítása</a>
                 <a href="#csere" class="nav-item nav-link">Cseréje</a>
+                <a href="#pont" class="nav-item nav-link">Pont-kalkulátor érettségihez</a>
             </div>
         </div>
     </nav>
@@ -69,6 +70,24 @@
     <div id="csere">
         <h2>Operációs rendszer cseréje</h2>
         <p>Az operációs rendszer kiválasztásánál fontos hogy az ügyfél <b>mire akarja használni</b> a számítógépet. Az operációs rendszernek támogatnia kell a meglévő hardvereszközöket és a szükséges alkalmazásokat. A technikusnak felül kell vizsgálnia a <b>költségvetési lehetőségek</b>et, meg kell értenie, mire kivánják használni a számítógépet, és meg kell határozni, hogy milyen típusú alkalmazások kerülnek majd telepítésre. Minden operációs rendszernek van egy <b>minimum hardverigény</b>e, ami a rendszer telepítéséhez és a megfelelő működéséhez szükséges. Ismerjük meg a berendezést, amit az ügyfél használ. Ha <b>hardverbővítés</b> szükséges, végezzünk <b>költségfelmérés</b>t, hogy meghatározzuk a legjobb döntést. Néha olcsóbb az ügyfélnek, ha <b>új számítógépet vásárol</b>, de lehet olcsóbb kicserélni a <b>következő alkatrészeket: RAM; merevlemez; CPU; videokártya; alaplap</b>. Az operációs rendszer minimális hardverkövetelményeinek meghatározása után bizonyosodjunk meg, hogy a számítógépben található hardverek <b>kompatibilisak</b> az ügyfél számára kiválasztott rendszerrel.</p>
+    </div>
+
+    <div id="pont">
+        <h2>Érettségi pont kalkulátor emelt szinthez</h2>
+        <form id="pontform" name="pontform" action="#pont" onsubmit="validateForm()" method="get">
+            <p>
+                Szóbeli százalék:
+                <input type="number" id="szpont" min="0" max="100">
+            </p>
+            <p>
+                Írásbeli százalék:
+                <input type="number" id="ipont" min="0" max="100">
+            </p>
+            <p>
+                <input type="submit" value="Számol">
+                <input type="reset" value="Töröl">
+            </p>
+        </form>
     </div>
 
 </body>
